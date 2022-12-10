@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./form.css">
+  <link rel="stylesheet" href="./Home_and_Profile.css">
+</head>
+<style>
+  .lah {
+    text-align: center
+  }
+
+  .leadol {
+    padding-left: 40px;
+    margin: 14px;
+  }
+
+  
+</style>
+
+<body>
+  <div class="lealogo">
+    <img src="./logo.png" alt="error" class="lealogo1">
+  </div>
+  <div class="container">
+    <form id="survey-form">
+      <div>
+        <h1 class="lah">LEAVE APPLICATION</h1>
+      </div>
+      <div class="leadol">
+        <big>Date of leave</b></big><br>
+        <label for="From" class="leafrom">From:</label>
+        <input type="date" id="From" name="From">
+        <label for="To">To:</label>
+        <input type="date" id="To" name="To">
+        <br><br>
+        <label for="message">Reason for Leave:</label>
+        <textarea id="message" name="message" rows="6" cols="60" placeholder="Specify the reason..."></textarea>
+        <div>
+          <label for="phone" style="text-align:center;font-weight: bold">Emergency contact number</label>
+          <input class="form-control" type="tel" id="phone" placeholder="e.g. +91 702 123 4567" value="+91 ">
+        </div>
+        <br>
+        
+          <input type="submit" value="Submit" class="submit">
+      
+      </div>
+    </form>
+  </div>
+  <div class="lback">
+    <div class="bthp">
+      <button class="btn"><a href="./after_login_home.html">Back</a></button>
+    </div>
+  </div>
+</body>
+
+</html>

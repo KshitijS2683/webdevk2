@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Home_and_Profile.css">
+    <link rel="stylesheet" href="./form.css">
+</head>
+<style>
+    #complain{
+        text-align: center;
+    }
+    .form{
+        margin-left: 40px;
+    }
+    .lfrom{
+        margin-top: -10px;
+    }
+</style>
+<body>
+    <div class="lealogo">
+        <img src="./logo.png" alt="error" class="lealogo1">
+      </div>
+    <div class="container">
+        <form id="survey-form">
+            <div>
+                <div id="complain" >
+                    <h1>
+                        COMPLAINT BOX
+                    </h1>
+                </div>
+                <div class="form">
+                    <form>
+                      <label for="complaint">Complaint Regarding</label>
+                      <select id="complaint" class="scr" required>
+                        <option value="a">Electrical</option>
+                        <option value="b">Mechanical</option>
+                        <option value="c">Plumbing</option>
+                        <option value="d">Ragging</option>
+                        </select>
+                        <br><br>
+                        <label for="time" class="toa">Time of availability</label>
+                        <label for="from"class="lfrom">From-</label>
+                        <select class="sfr" id="from" required>
+                        <option value="10">10 am</option>
+                        <option value="11">11 am</option>
+                        <option value="12">12 am</option>
+                        <option value="1">1 pm</option>
+                        <option value="2">2 pm</option>
+                        <option value="3">3 pm</option>
+                        <option value="4">4 pm</option>
+                        <option value="5">5 pm</option>
+                        </select>   
+                        <label class="lto" for="to">To-</label>
+                        <select class="sto" id="to" required>
+                        <option value="11">11 am</option>
+                        <option value="12">12 am</option>
+                        <option value="1">1 pm</option>
+                        <option value="2">2 pm</option>
+                        <option value="3">3 pm</option>
+                        <option value="4">4 pm</option>
+                        <option value="5">5 pm</option>
+                        <option value="6">6 pm</option>
+                        </select>   
+                        <br><br>
+                        <label for="roc">Reason for complain </label>
+                        <textarea id="roc" name="roc" cols="60" rows="5" placeholder="Specify the reason..." requierd></textarea>
+                        <br><br>
+                        <label for="aos">Anything else </label>
+                        <textarea id="aos" name="aos" cols="60" rows="5" placeholder="Anything else..." required></textarea>
+                        <br><br>
+                        <input type="submit" value="Submit" class="submit">
+                    </form>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="lback">
+        <div class="bthp">
+          <button class="btn"><a href="./after_login_home.html">Back</a></button>
+        </div>
+      </div>
+</body>
+
+</html>
